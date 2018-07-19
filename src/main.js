@@ -15,6 +15,7 @@ import store from './stroe'
 // 引入插件
 import VueSweetalert2 from './plugins/vue-sweetalert2'
 import Message from './plugins/message'
+import Filter from './fileters';
 
 // 使用插件
 Vue.use(VueSweetalert2);

@@ -10,6 +10,7 @@ export default {
         // 挂载实例后返回实例目标
         const $el = vm.$mount().$el;
 
+
         Vue.nextTick(() => {
             // 在下一次 DOM 更新后，将实例目标添加到 #main-container 元素内部的最前面
             document.querySelector('#main-container').prepend($el)

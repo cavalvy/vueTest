@@ -1,14 +1,16 @@
 // 具体的验证逻辑
 function validate(el, modifiers, bindingValue) {
     bindingValue = bindingValue && typeof bindingValue === 'object' ? bindingValue : {}
-    const value = typeof el.value === 'string' ? el.value.trim() : ''
+    const value = typeof el.value === 'string' ? el.value.trim() : '';
+
     const { title = '该项', error } = bindingValue
     let defaultError = ''
 
     if (modifiers.required && value === '') {
-        defaultError = `${title}不能为空`
+        defaultError = `${title}不能为空`;
     } else if (bindingValue.target) {
-        const target = document.querySelector(bindingValue.target)
+        const target = document.querySelector(bindingValue.target);
+
         const targetValue = target ? target.value : null
 
         if (targetValue !== value) {

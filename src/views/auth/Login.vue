@@ -37,7 +37,7 @@
                 msg: '', // 消息
                 msgType: '', // 消息类型
                 msgShow: false // 是否显示消息，默认不显示
-            }
+            };
         },
         methods: {
             login(e) {

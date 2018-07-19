@@ -29,7 +29,7 @@
 
 <script>
     export default {
-        name: "Avatar",
+        name: "EditAvatar",
         data() {
             return {
                 avatar: '' // 头像地址
